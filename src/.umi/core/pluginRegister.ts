@@ -1,12 +1,12 @@
 // @ts-nocheck
 import { plugin } from './plugin';
-import * as Plugin_0 from '/Users/shaosong/Documents/umiJS/TCMP/src/app.tsx';
+import * as Plugin_0 from '/Users/shaosong/Documents/umiJS/tcmp0.1/src/app.tsx';
 import * as Plugin_1 from '../plugin-initial-state/runtime';
 import * as Plugin_2 from '../plugin-model/runtime';
 
   plugin.register({
     apply: Plugin_0,
-    path: '/Users/shaosong/Documents/umiJS/TCMP/src/app.tsx',
+    path: '/Users/shaosong/Documents/umiJS/tcmp0.1/src/app.tsx',
   });
   plugin.register({
     apply: Plugin_1,

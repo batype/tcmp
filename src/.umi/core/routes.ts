@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType, dynamic } from '/Users/shaosong/Documents/umiJS/TCMP/node_modules/umi/node_modules/@umijs/runtime';
+import { ApplyPluginsType, dynamic } from '/Users/shaosong/Documents/umiJS/tcmp0.1/node_modules/umi/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -28,22 +28,22 @@ export function getRoutes() {
     "routes": [
       {
         "path": "/main/list",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__component__list' */'/Users/shaosong/Documents/umiJS/TCMP/src/pages/component/list')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__component__list' */'/Users/shaosong/Documents/umiJS/tcmp0.1/src/pages/component/list')}),
         "exact": true
       },
       {
         "path": "/main/card",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__component__card' */'/Users/shaosong/Documents/umiJS/TCMP/src/pages/component/card')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__component__card' */'/Users/shaosong/Documents/umiJS/tcmp0.1/src/pages/component/card')}),
         "exact": true
       },
       {
         "path": "/main/accountcenter",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__setting__AccountCenter__index' */'/Users/shaosong/Documents/umiJS/TCMP/src/pages/setting/AccountCenter/index')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__setting__AccountCenter__index' */'/Users/shaosong/Documents/umiJS/tcmp0.1/src/pages/setting/AccountCenter/index')}),
         "exact": true
       },
       {
         "path": "/main/accountsettings",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__setting__Accountsettings__index' */'/Users/shaosong/Documents/umiJS/TCMP/src/pages/setting/Accountsettings/index')}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__setting__Accountsettings__index' */'/Users/shaosong/Documents/umiJS/tcmp0.1/src/pages/setting/Accountsettings/index')}),
         "exact": true
       }
     ]

@@ -4,15 +4,15 @@ import '@@/core/devScripts';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from '/Users/shaosong/Documents/umiJS/TCMP/node_modules/umi/node_modules/@umijs/runtime';
-import { renderClient } from '/Users/shaosong/Documents/umiJS/TCMP/node_modules/@umijs/renderer-react';
+import { ApplyPluginsType } from '/Users/shaosong/Documents/umiJS/tcmp0.1/node_modules/umi/node_modules/@umijs/runtime';
+import { renderClient } from '/Users/shaosong/Documents/umiJS/tcmp0.1/node_modules/@umijs/renderer-react';
 import { getRoutes } from './core/routes';
 
 
 
 (() => {
   // Runtime block add component
-  window.GUmiUIFlag = require('/Users/shaosong/Documents/umiJS/TCMP/node_modules/@umijs/plugin-ui-blocks/lib/sdk/flagBabelPlugin/GUmiUIFlag.js').default;
+  window.GUmiUIFlag = require('/Users/shaosong/Documents/umiJS/tcmp0.1/node_modules/@umijs/plugin-ui-blocks/lib/sdk/flagBabelPlugin/GUmiUIFlag.js').default;
 
   // Enable/Disable block add edit mode
   window.addEventListener(
@@ -83,9 +83,9 @@ export default clientRender();
         if (isIE) return;
 
         // Umi UI Bubble
-        require('/Users/shaosong/Documents/umiJS/TCMP/node_modules/@umijs/preset-ui/lib/bubble').default({
+        require('/Users/shaosong/Documents/umiJS/tcmp0.1/node_modules/@umijs/preset-ui/lib/bubble').default({
           port: 3001,
-          path: '/Users/shaosong/Documents/umiJS/TCMP',
+          path: '/Users/shaosong/Documents/umiJS/tcmp0.1',
           currentProject: '',
           isBigfish: undefined,
         });
