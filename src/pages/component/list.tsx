@@ -1,7 +1,6 @@
 import styles from './index.less';
 import api from '../../../mock/api';
 import { Button } from 'antd';
-
 export default function IndexPage() {
   return (
     <div>

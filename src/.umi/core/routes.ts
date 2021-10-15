@@ -17,9 +17,25 @@ export function getRoutes() {
     "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__login__index' */'@/pages/login/index')})
   },
   {
+    "exact": true,
+    "path": "/register",
+    "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__register__UserRegister__index' */'@/pages/register/UserRegister/index')})
+  },
+  {
     "path": "/home",
-    "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__homeIndex__index' */'@/pages/homeIndex/index')}),
-    "exact": true
+    "component": dynamic({ loader: () => import(/* webpackChunkName: 'layouts__BlogLayout__BlogLayout' */'@/layouts/BlogLayout/BlogLayout.jsx')}),
+    "routes": [
+      {
+        "exact": true,
+        "path": "/home/index",
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__homePage__index' */'/Users/shaosong/Documents/umiJS/tcmp0.1/src/pages/homePage/index.jsx')})
+      },
+      {
+        "exact": true,
+        "path": "/home/blog",
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__homePage__blog__index' */'/Users/shaosong/Documents/umiJS/tcmp0.1/src/pages/homePage/blog/index')})
+      }
+    ]
   },
   {
     "path": "/main",
