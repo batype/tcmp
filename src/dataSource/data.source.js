@@ -60,7 +60,7 @@ export const Nav00DataSource = {
         name: 'item2',
         className: 'header0-item',
         children: {
-          href: '#',
+          href: 'https://gitee.com/songsshao/tcmp.git',
           children: [{ children: '仓库', name: 'text' }],
         },
       },
@@ -128,4 +128,10 @@ export const Footer00DataSource = {
       </span>
     ),
   },
+};
+export const BlogDataSource = {
+  newBlog: [
+    { name: 'antd Table use', time: '2021-10-20 17:34:56' },
+    { name: 'antd Form use', time: '2021-10-19 17:34:56' },
+  ],
 };
