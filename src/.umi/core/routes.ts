@@ -34,6 +34,15 @@ export function getRoutes() {
         "exact": true,
         "path": "/home/blog",
         "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__homePage__blog__index' */'/Users/shaosong/Documents/umiJS/tcmp0.1/src/pages/homePage/blog/index')})
+      },
+      {
+        "exact": true,
+        "path": "/home/blog/context",
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__homePage__blog__context__index' */'/Users/shaosong/Documents/umiJS/tcmp0.1/src/pages/homePage/blog/context/index')})
+      },
+      {
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'@/pages/404')}),
+        "exact": true
       }
     ]
   },
@@ -61,8 +70,17 @@ export function getRoutes() {
         "path": "/main/accountsettings",
         "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__setting__Accountsettings__index' */'/Users/shaosong/Documents/umiJS/tcmp0.1/src/pages/setting/Accountsettings/index')}),
         "exact": true
+      },
+      {
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'@/pages/404')}),
+        "exact": true
       }
     ]
+  },
+  {
+    "exact": true,
+    "path": "/acupuncture/main",
+    "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__acupuncture__main__index' */'@/pages/acupuncture/main/index')})
   },
   {
     "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'@/pages/404')}),

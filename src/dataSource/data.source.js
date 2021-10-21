@@ -76,6 +76,14 @@ export const Nav00DataSource = {
         name: 'item4',
         className: 'header0-item',
         children: {
+          href: '/acupuncture/main',
+          children: [{ children: '针灸十二时辰', name: 'text' }],
+        },
+      },
+      {
+        name: 'item5',
+        className: 'header0-item',
+        children: {
           href: '#',
           children: [
             {
@@ -133,5 +141,12 @@ export const BlogDataSource = {
   newBlog: [
     { name: 'antd Table use', time: '2021-10-20 17:34:56' },
     { name: 'antd Form use', time: '2021-10-19 17:34:56' },
+  ],
+  friendUrl: [
+    {
+      url: 'https://blog.csdn.net/qq_35490191?spm=1000.2115.3001.5343',
+      name: 'song.shao',
+    },
+    { url: 'https://www.mukang.net.cn/', name: 'mukang' },
   ],
 };

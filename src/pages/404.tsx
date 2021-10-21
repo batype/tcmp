@@ -9,7 +9,7 @@ export default function Index404Page() {
         title="404"
         subTitle="Sorry, the page you visited does not exist."
         extra={
-          <Button type="primary" onClick={() => history.push('/home')}>
+          <Button type="primary" onClick={() => history.push('/home/index')}>
             Back Home
           </Button>
         }

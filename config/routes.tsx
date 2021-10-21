@@ -21,6 +21,12 @@ export const routes = [
         path: '/home/blog',
         component: 'homePage/blog/index',
       },
+      {
+        exact: true,
+        path: '/home/blog/context',
+        component: 'homePage/blog/context/index',
+      },
+      { component: '@/pages/404' },
     ],
   },
   {
@@ -38,7 +44,13 @@ export const routes = [
         path: '/main/accountsettings',
         component: 'setting/Accountsettings/index',
       },
+      { component: '@/pages/404' },
     ],
+  },
+  {
+    exact: true,
+    path: '/acupuncture/main',
+    component: '@/pages/acupuncture/main/index',
   },
   { component: '@/pages/404' },
 ];

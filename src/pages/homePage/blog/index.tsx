@@ -4,6 +4,8 @@ import { Card, Col, Row, Input } from 'antd';
 import './index.less';
 import React from 'react';
 import { BlogDataSource } from '../../../dataSource/data.source';
+import { useHistory } from 'umi';
+
 const { Search } = Input;
 
 class PageProps {}
@@ -13,6 +15,7 @@ const Page: React.FC<PageProps> = () => {
   const onSearch = (value: any) => {
     console.log(value);
   };
+  const history = useHistory();
 
   return (
     <div className="song-blog-div">
@@ -30,7 +33,13 @@ const Page: React.FC<PageProps> = () => {
           <Card title="最新链接">
             {BlogDataSource?.newBlog?.map((item: any, index: any) => {
               return (
-                <div key={index}>
+                <div
+                  key={index}
+                  className="song-list-style"
+                  onClick={() => {
+                    history.push('/home/blog/context?id=0000001');
+                  }}
+                >
                   <Row>
                     <Col span={12}>{item.name}</Col>
                     <Col span={12} style={{ textAlign: 'right' }}>
@@ -51,7 +60,19 @@ const Page: React.FC<PageProps> = () => {
           </Card>
           <div style={{ height: 10 }}></div>
           <Card title="友情链接">
-            <div>sss222222</div>
+            {BlogDataSource?.friendUrl?.map((item: any, index: any) => {
+              return (
+                <div
+                  key={index}
+                  className="song-list-style"
+                  onClick={() => {
+                    window.open(item.url);
+                  }}
+                >
+                  {item.name}
+                </div>
+              );
+            })}
           </Card>
         </Col>
       </Row>
